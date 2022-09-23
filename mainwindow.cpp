@@ -202,6 +202,7 @@ void MainWindow::on_generateBtn_clicked()
 
 //    qDebug() << m_watcher.isStarted() << m_watcher.isPaused() << m_watcher.isRunning() << m_watcher.isCanceled() << m_watcher.isFinished();
 
+    m_userMode = 0;
     m_map.generate(ui->widthEdit->value(), ui->heightEdit->value());
     showMap();
 
